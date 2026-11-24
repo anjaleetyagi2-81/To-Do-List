@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<div class="todo-container">
+
+   <h1 id="appTitle">
+    <i class="fa-solid fa-list-check"></i>
+    To-Do List
+</h1>
+
+    <input type="text" id="taskInput" placeholder="Enter your task">
+
+    <button id="addTaskBtn">
+    <i class="fa-solid fa-plus"></i>
+    Add Task
+</button>
+    <div class="task-container">
+     <!-- Pending Tasks -->
+    <section class="task-section" id="pending">
+        <h2 id="pendingTitle">
+    <i class="fa-regular fa-clock"></i>
+    Pending Tasks
+</h2>
+        <p id="pendingCount">0 pending</p>
+
+        <ul id="pendingList"></ul>
+
+        <p id="pendingEmpty">No pending tasks yet!</p>
+    </section>
+
+    <!-- Completed Tasks -->
+    <section class="task-section" id="completed">
+       <h2 id="completedTitle">
+    <i class="fa-solid fa-circle-check"></i>
+    Completed Tasks
+</h2>
+        <p id="completedCount">0 completed</p>
+
+        <ul id="completedList"></ul>
+
+        <p id="completedEmpty">No completed tasks yet!</p>
+    </section>
+    </div>
+    <footer>
+    <p>Stay Organized, Stay Productive! ✨</p>
+    <small>Made with ❤️ | © 2026 To-Do List</small>
+</footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
